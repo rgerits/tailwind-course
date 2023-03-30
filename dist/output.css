@@ -987,6 +987,18 @@ html {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.animation-delay-200{
+  animation-delay: 200ms;
+}
+
+.animation-delay-300{
+  animation-delay: 300ms;
+}
+
+.animation-delay-\[75ms\]{
+  animation-delay: 75ms;
+}
+
 .hover\:bg-sky-900:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(12 74 110 / var(--tw-bg-opacity));
