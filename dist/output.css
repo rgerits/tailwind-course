@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 
 /*
 ! tailwindcss v3.3.0 | MIT License | https://tailwindcss.com
@@ -425,7 +425,44 @@ video {
 }
 
 html {
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
+}
+
+h1{
+  font-size: 3.75rem;
+  line-height: 1;
+  font-weight: 700;
+}
+
+,
+  h2{
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 700;
+}
+
+h3{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+}
+
+h4{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+}
+
+h5{
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+h6{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
 }
 
 *, ::before, ::after{
@@ -621,6 +658,11 @@ html {
   top: 100%;
 }
 
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .my-auto{
   margin-top: auto;
   margin-bottom: auto;
@@ -636,6 +678,10 @@ html {
 
 .mt-1{
   margin-top: 0.25rem;
+}
+
+.mt-20{
+  margin-top: 5rem;
 }
 
 .mt-3{
@@ -700,6 +746,10 @@ html {
 
 .w-full{
   width: 100%;
+}
+
+.max-w-screen-lg{
+  max-width: 1024px;
 }
 
 .flex-1{
