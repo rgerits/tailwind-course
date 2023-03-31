@@ -25,6 +25,15 @@
           }
         });
 
+        const darkModeToggle = document.getElementById("dark-mode-toggle");
+        darkModeToggle.addEventListener("click", () => {
+          if (document.body.classList.contains("dark")) {
+            document.body.classList.remove("dark");
+          } else {
+            document.body.classList.add("dark");
+          }
+        });
+
         const previousButton = document.getElementById("previous");
         const nextButton = document.getElementById("next");
         const caroussel = document.getElementById("caroussel");
@@ -45,11 +54,17 @@
       };
     </script>
   </head>
-  <body>
+  <body class="dark">
     <main class="bg-zinc-200 dark:bg-zinc-900">
+      <div id="dark-mode-toggle"
+           class="fixed top-24 w-12 right-0 inline-block cursor-pointer rounded-l-lg bg-zinc-900 dark:bg-zind-200 text-zinc-200 dark:text-zinc-900 p-2 text-3xl"
+      >
+        <i class="fa-solid fa-moon inline dark:hidden"></i>
+        <i class="fa-solid fa-sun dark:inline hidden text-zinc-200"></i>
+      </div>
       <header class="text-zinc-200">
         <nav
-          class="sticky top-0 flex bg-gradient-to-r from-rose-500 to-pink-500"
+          class="sticky top-0 flex bg-gradient-to-r from-rose-500 to-pink-500 z-10"
         >
           <div class="flex items-center gap-2 p-2">
             <img src="./assets/images/logo-inverted.png" width="50" alt="" />
@@ -189,7 +204,7 @@
           </form>
         </div>
       </header>
-      <div class="mx-auto mt-20 max-w-screen-lg text-zinc-900">
+      <div class="mx-auto mt-20 max-w-screen-lg text-zinc-900 dark:text-zinc-200">
         <h2 class="text-5xl">Headliners</h2>
         <p>
           Experience the sonic delight from these made-up artits across 7 days
@@ -199,7 +214,7 @@
         <div class="flex">
           <div
             id="previous"
-            class="relative -top-11 flex cursor-pointer items-center justify-center text-5xl"
+            class="relative -top-11 pr-2 flex cursor-pointer items-center justify-center text-5xl"
           >
             <i class="fas fa-angle-left"></i>
           </div>
@@ -274,7 +289,7 @@
           </div>
           <div
             id="next"
-            class="relative -top-11 flex cursor-pointer items-center justify-center text-5xl"
+            class="relative -top-11 pl-2 flex cursor-pointer items-center justify-center text-5xl"
           >
             <i class="fas fa-angle-right"></i>
           </div>
