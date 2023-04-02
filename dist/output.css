@@ -592,6 +592,19 @@ h6{
   }
 }
 
+.btn{
+  display: inline-block;
+  cursor: pointer;
+  font-weight: bold;
+  padding: ${theme("spacing.2")} ${theme("spacing.4")};
+  border-radius: 0.5rem;
+}
+
+.btn-zinc-100{
+  background-color: #f4f4f5;
+  color: white;
+}
+
 .menu-item{
   position: relative;
   display: flex;
@@ -661,6 +674,10 @@ h6{
   top: 0px;
 }
 
+.top-1\/2{
+  top: 50%;
+}
+
 .top-24{
   top: 6rem;
 }
@@ -673,10 +690,6 @@ h6{
   top: 100%;
 }
 
-.top-1\/2{
-  top: 50%;
-}
-
 .z-10{
   z-index: 10;
 }
@@ -686,19 +699,14 @@ h6{
   margin-right: auto;
 }
 
-.my-auto{
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-.mx-4{
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
 .my-4{
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.my-auto{
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .mb-5{
@@ -785,6 +793,10 @@ h6{
   height: 0.75rem;
 }
 
+.h-4{
+  height: 1rem;
+}
+
 .h-80{
   height: 20rem;
 }
@@ -795,10 +807,6 @@ h6{
 
 .h-full{
   height: 100%;
-}
-
-.h-4{
-  height: 1rem;
 }
 
 .w-1{
@@ -867,6 +875,17 @@ h6{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+@keyframes ping{
+  75%, 100%{
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.animate-ping{
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
 @keyframes wavey{
   0%, 100%{
     transform: scaleY(0.5);
@@ -879,17 +898,6 @@ h6{
 
 .animate-wavey{
   animation: wavey 1000ms linear infinite;
-}
-
-@keyframes ping{
-  75%, 100%{
-    transform: scale(2);
-    opacity: 0;
-  }
-}
-
-.animate-ping{
-  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
 
 .cursor-pointer{
@@ -1015,6 +1023,11 @@ h6{
   background-color: rgb(236 72 153 / var(--tw-bg-opacity));
 }
 
+.bg-rose-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 63 94 / var(--tw-bg-opacity));
+}
+
 .bg-white\/30{
   background-color: rgb(255 255 255 / 0.3);
 }
@@ -1032,11 +1045,6 @@ h6{
 .bg-zinc-900{
   --tw-bg-opacity: 1;
   background-color: rgb(24 24 27 / var(--tw-bg-opacity));
-}
-
-.bg-rose-500{
-  --tw-bg-opacity: 1;
-  background-color: rgb(244 63 94 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-b{
@@ -1201,14 +1209,14 @@ h6{
   color: rgb(228 228 231 / var(--tw-text-opacity));
 }
 
-.text-zinc-900{
-  --tw-text-opacity: 1;
-  color: rgb(24 24 27 / var(--tw-text-opacity));
-}
-
 .text-zinc-400{
   --tw-text-opacity: 1;
   color: rgb(161 161 170 / var(--tw-text-opacity));
+}
+
+.text-zinc-900{
+  --tw-text-opacity: 1;
+  color: rgb(24 24 27 / var(--tw-text-opacity));
 }
 
 .underline{
