@@ -58,7 +58,7 @@
     <main class="bg-zinc-200 dark:bg-zinc-900">
       <div
         id="dark-mode-toggle"
-        class="dark:bg-zind-200 fixed right-0 top-24 inline-block w-12 cursor-pointer rounded-l-lg bg-zinc-900 p-2 text-3xl text-zinc-200 dark:text-zinc-900"
+        class="dark:bg-zind-200 fixed right-0 top-24 z-10 inline-block w-12 cursor-pointer rounded-l-lg bg-zinc-900 p-2 text-3xl text-zinc-200 dark:text-zinc-900"
       >
         <i class="fa-solid fa-moon inline dark:hidden"></i>
         <i class="fa-solid fa-sun hidden text-zinc-200 dark:inline"></i>
@@ -307,7 +307,46 @@
         >
           <div
             class="absolute left-1/2 top-0 ml-[-8px] h-full w-4 rounded-full bg-gradient-to-b from-sky-900 via-cyan-900 to-teal-900"
-          ></div>
+          >
+            <div class="sticky top-1/2">
+              <div class="relative h-4 w-4">
+                <div
+                  class="absolute h-4 w-4 animate-ping rounded-full bg-pink-500 opacity-75"
+                ></div>
+                <div class="relative h-4 w-4 rounded-full bg-rose-500"></div>
+              </div>
+            </div>
+          </div>
+          <div class="grid grid-cols-2 gap-8">
+            <div>
+              <h4 class="my-4 rounded-lg bg-zinc-900 p-2">1st July</h4>
+            </div>
+            <div></div>
+            <div class="text-right">
+              <div>Jackie Chaston</div>
+              <div class="text-zinc-400">6pm - Sage Stage</div>
+            </div>
+            <div></div>
+            <div></div>
+            <div>
+              <div>Jackie Chaston</div>
+              <div class="text-zinc-400">6pm - Sage Stage</div>
+            </div>
+            <div>
+              <h4 class="my-4 rounded-lg bg-zinc-900 p-2">1st July</h4>
+            </div>
+            <div></div>
+            <div class="text-right">
+              <div>Jackie Chaston</div>
+              <div class="text-zinc-400">6pm - Sage Stage</div>
+            </div>
+            <div></div>
+            <div></div>
+            <div>
+              <div>Jackie Chaston</div>
+              <div class="text-zinc-400">6pm - Sage Stage</div>
+            </div>
+          </div>
         </div>
         <h2 class="mt-20">Tickets</h2>
         <table class="mt-5 table w-full border-collapse border border-zinc-500">
